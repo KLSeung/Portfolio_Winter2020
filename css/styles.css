@@ -14,6 +14,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.row{
+  padding-bottom: 100px;
+}
 
 /* navigation styles tart here */
 
@@ -21,6 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 80px;
 }
 
 nav ul {
@@ -44,10 +48,7 @@ nav a:hover {
   color: grey;
 }
 
-
-
 .logo {
-  display: inline-block;
   font-size: 30px;
   letter-spacing: 0.11em;
   text-transform: uppercase;
@@ -80,102 +81,31 @@ nav li {
 
 /* intro styling starts here */
 
-.profile {
-  grid-column: 1 / 2;
-  margin-right: 100px;
-  margin-left: 100px;
-  width: 50%;
-}
 
 .profilePic {
   border-radius: 50%;
   width: 220px;
-  height: auto;
-}
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
 
 .introText {
-  grid-column: 2 / 3;
   margin:auto;
 }
 
 .introName {
   font-size: 36px;
   line-height: 49px;
-  font-style: normal;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .introDesc {
   font-size: 18px;
-  line-height: 25px;
-  font-style: normal;
-  font-weight: normal;
+  line-height: 35px;
 }
 
 /* projects styling starts here */
-
-.projects {
-  padding-top: 65px;
-  display: flex;
-}
-
-.projectsColumn {
-  flex: 33.33%;
-  padding: 10px;
-  text-align: center;
-}
-
-.projectLeft {
-  width: 300px;
-  height: 200px;
-  border-radius: 15px;
-}
-
-.projectCenter {
-  width: 300px;
-  height: 200px;
-  border-radius: 15px;
-}
-
-.projectRight {
-  width: 300px;
-  height: 200px;
-  border-radius: 15px;
-}
-
-.projectsTagColumn {
-  display: flex;
-  font-size: 12px;
-}
-
-
-.projectsTagHTML {
-  flex: 33.33%;
-  padding: 10px;
-  color: white;
-  background-color: rgba(244, 115, 115, 0.7);
-  border-radius: 20px;
-  text-align: center;
-}
-
-.projectsTagCSS {
-  flex: 33.33%;
-  padding: 10px;
-  color: white;
-  background-color: rgba(244, 115, 115, 0.7);
-  border-radius: 20px;
-  text-align: center;
-}
-
-.projectsTagJS {
-  flex: 33.33%;
-  padding: 10px;
-  color: white;
-  background-color: rgba(244, 115, 115, 0.7);
-  border-radius: 20px;
-  text-align: center;
-}
 
 .project__name{
   font-weight: bold;
@@ -184,4 +114,37 @@ nav li {
 
 .project__image{
   max-width: 100%;
+  border-radius: 15px;
+  border: 1px solid #A9A9A9;
+  margin-top: 30px;
+}
+
+
+.projectsTag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 0px 13px 15px 0px;
+}
+
+.projectsTag__pink {
+  color: #fff;
+  background-color: rgba(244, 115, 115, 0.7);
+}
+
+.projectsTag__blue {
+  color: #fff;
+  background-color: rgba(53, 128, 216, 0.7);
+}
+
+.projectsTag__purple {
+  color: #fff;
+  background-color: rgba(150, 70, 164, 0.7);
+}
+
+.projectsTag__lightblue {
+  color: #fff;
+  background-color: rgba(115, 159, 244, 0.69);
 }
