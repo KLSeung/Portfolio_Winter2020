@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: rgba(255, 255, 255, 0.5)
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+/* navigation styles tart here */
+header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: var(--background);
+  margin-top: 20px;
+}
+
+
+nav {
+  position: absolute;
+  text-align:left;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--background);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+/*@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+}*/
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto minmax(600px, 5fr) 1fr;
+}
+
+.logo {
+  grid-column: 2 / 3;
+  font-size: 30px;
+  letter-spacing: 0.11em;
+  line-height: 41px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav {
+  all: unset;
+  grid-column: 3 / 4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li {
+  margin-left: 2em;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* intro styling starts here */
+
+section{
+  padding: 3rem 4.5rem 3rem 4.5rem;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr auto minmax(300px, 5fr) 1fr;
+  padding-top: 125px;
+}
+
+.profile {
+  grid-column: 1 / 2;
+  margin-right: 100px;
+  margin-left: 100px;
+  width: 50%;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 220px;
+  height: auto;
+}
+
+.introText {
+  grid-column: 2 / 3;
+  margin:auto;
+}
+
+.introName {
+  font-size: 36px;
+  line-height: 49px;
+  font-style: normal;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.introDesc {
+  font-size: 18px;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* projects styling starts here */
+
+.projects {
+  padding-top: 65px;
+  display: flex;
+}
+
+.projectsColumn {
+  flex: 33.33%;
+  padding: 10px;
+  text-align: center;
+}
+
+.projectLeft {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.projectCenter {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.projectRight {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.projectsTagColumn {
+  display: flex;
+  font-size: 12px;
+}
+
+.projectsTagHTML {
+  flex: 33.33%;
+  padding: 10px;
+  color: white;
+  background-color: rgba(244, 115, 115, 0.7);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.projectsTagCSS {
+  flex: 33.33%;
+  padding: 10px;
+  color: white;
+  background-color: rgba(244, 115, 115, 0.7);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.projectsTagJS {
+  flex: 33.33%;
+  padding: 10px;
+  color: white;
+  background-color: rgba(244, 115, 115, 0.7);
+  border-radius: 20px;
+  text-align: center;
+}
