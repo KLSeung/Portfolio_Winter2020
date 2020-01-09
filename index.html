@@ -4,73 +4,87 @@
     <meta charset="utf-8">
     <title>Website</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
-  <header>
-      <h1 class="logo">KEVIN LEE</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-  </header>
+  <div class="container">
+    <header>
+        <h1 class="logo">KEVIN LEE</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
 
-  <section class="intro">
-    <div class="profile">
-      <img src="img/me.png" class="profilePic" alt="Me">
-    </div>
-    <div class="introText">
-      <h1 class="introName">Hi, I'm Kevin</h1>
-      <p class="introDesc">A Front-End Developer with an Environmental Engineering and</p>
-      <p class="introDesc">Electrical Engineering background.</p>
-    </div>
-  </section>
+    <section class="">
+      <div class="profile">
+        <img src="img/me.png" class="profilePic" alt="Me">
+      </div>
+      <div class="introText">
+        <h1 class="introName">Hi, I'm Kevin</h1>
+        <p class="introDesc">A Front-End Developer with an Environmental Engineering and</p>
+        <p class="introDesc">Electrical Engineering background.</p>
+      </div>
+    </section>
 
-  <section class="projects">
-    <div class="projectsColumn">
-      <img src="img/Rock_Paper_Scissor.png" class="projectLeft" alt="Rock Paper Scissor">
-      <p style="font-weight: bold; font-size:18px;">Rock Paper Scissor</p>
-      <div class="projectsTagColumn">
-        <div class="projectsTagHTML">
-          HTML
-        </div>
-        <div class="projectsTagCSS">
-          CSS
-        </div>
-        <div class="projectsTagJS">
-          JavaScript
+    <section class="row">
+      <div class="col-md-4">
+        <img src="img/Rock_Paper_Scissor.png" class="project__image" alt="Rock Paper Scissor">
+        <p class="project__name">Rock Paper Scissor</p>
+        <div class="projectsTagColumn">
+          <div class="projectsTagHTML">
+            HTML
+          </div>
+          <div class="projectsTagCSS">
+            CSS
+          </div>
+          <div class="projectsTagJS">
+            JavaScript
+          </div>
         </div>
       </div>
-    </div>
-    <div class="projectsColumn">
-      <img src="img/Alarm_Clock.png" class="projectCenter" alt="Alarm Clock">
-      <p style="font-weight: bold; font-size:18px;"">AlarmMe</p>
-    </div>
-    <div class="projectsColumn">
-        <img src="img/Robofriends.png" class="projectRight" alt="Robofriends">
-        <p style="font-weight: bold; font-size:18px;"">Robofriends</p>
-    </div>
-  </section>
-
-  <section class="projects">
-    <div class="projectsColumn">
-      <img src="img/Rock_Paper_Scissor.png" class="projectLeft" alt="Rock Paper Scissor">
-      <div class="projectsTagColumn">
-
+      <div class="col-md-4">
+        <div class="project">
+          <img src="img/Alarm_Clock.png" class="project__image" alt="Alarm Clock">
+          <p class="project__name">AlarmMe</p>
+        </div>
       </div>
-    </div>
-    <div class="projectsColumn">
-      <img src="img/Alarm_Clock.png" class="projectCenter" alt="Alarm Clock">
-    </div>
-    <div class="projectsColumn">
-        <img src="img/Robofriends.png" class="projectRight" alt="Robofriends">
-    </div>
-  </section>
+      <div class="col-md-4">
+          <img src="img/Robofriends.png" class="project__image" alt="Robofriends">
+          <p class="project__name">Robofriends</p>
+      </div>
+      <div class="col-md-4">
+        <img src="img/Rock_Paper_Scissor.png" class="project__image" alt="Rock Paper Scissor">
+        <p class="project__name">Rock Paper Scissor</p>
+        <div class="projectsTagColumn">
+          <div class="projectsTagHTML">
+            HTML
+          </div>
+          <div class="projectsTagCSS">
+            CSS
+          </div>
+          <div class="projectsTagJS">
+            JavaScript
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project">
+          <img src="img/Alarm_Clock.png" class="project__image" alt="Alarm Clock">
+          <p class="project__name">AlarmMe</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <img src="img/Robofriends.png" class="project__image" alt="Robofriends">
+          <p class="project__name">Robofriends</p>
+      </div>
+    </section>
 
   </body>
 

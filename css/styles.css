@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -101,16 +99,6 @@ nav li {
 
 /* intro styling starts here */
 
-section{
-  padding: 3rem 4.5rem 3rem 4.5rem;
-}
-
-.intro {
-  display: grid;
-  grid-template-columns: 1fr auto minmax(300px, 5fr) 1fr;
-  padding-top: 125px;
-}
-
 .profile {
   grid-column: 1 / 2;
   margin-right: 100px;
@@ -180,6 +168,7 @@ section{
   font-size: 12px;
 }
 
+
 .projectsTagHTML {
   flex: 33.33%;
   padding: 10px;
@@ -205,4 +194,13 @@ section{
   background-color: rgba(244, 115, 115, 0.7);
   border-radius: 20px;
   text-align: center;
+}
+
+.project__name{
+  font-weight: bold;
+  font-size:18px;
+}
+
+.project__image{
+  max-width: 100%;
 }
