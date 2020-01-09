@@ -15,25 +15,12 @@ body {
 }
 
 
-
-
 /* navigation styles tart here */
-header {
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  background: var(--background);
-  margin-top: 20px;
-}
 
-
-nav {
-  position: absolute;
-  text-align:left;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background: var(--background);
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav ul {
@@ -57,37 +44,20 @@ nav a:hover {
   color: grey;
 }
 
-/*@media screen and (min-width: 800px) {
-  .nav-toggle-label {
-    display: none;
-  }
-}*/
 
-header {
-  display: grid;
-  grid-template-columns: 1fr auto minmax(600px, 5fr) 1fr;
-}
 
 .logo {
-  grid-column: 2 / 3;
+  display: inline-block;
   font-size: 30px;
   letter-spacing: 0.11em;
-  line-height: 41px;
-  font-weight: normal;
-  font-style: normal;
+  text-transform: uppercase;
 }
 
-nav {
-  all: unset;
-  grid-column: 3 / 4;
+
+.navigation__items{
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
-nav ul{
-  display: flex;
-}
 
 nav li {
   margin-left: 2em;
@@ -95,6 +65,17 @@ nav li {
   font-size: 15px;
   font-style: normal;
   font-weight: normal;
+}
+
+@media screen and (max-width: 567px) {
+  .logo {
+    font-size: 17px;
+  }
+
+  nav li {
+    margin-left: 1em;
+    font-size: 14px;
+  }
 }
 
 /* intro styling starts here */
