@@ -175,3 +175,13 @@ nav li {
   color: #fff;
   background-color: rgba(115, 159, 244, 0.69);
 }
+
+.projectsTag-red {
+  color: #fff;
+  background-color: rgba(248, 53, 53, 0.69);
+}
+
+.projectsTag-green {
+  color: #fff;
+  background-color: rgba(48, 200, 82, 0.69);
+}
