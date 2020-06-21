@@ -18,17 +18,17 @@
 
   <body>
 
-  <div></div>
+    <nav id="navigation">
+      <div class="logo">Kevin Lee</div>
+      <ul class="navigation__items">
+        <li><a href="./uploads/Kevin_Lee_Resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://github.com/KLSeung" target="_blank">GitHub</a></li>
+        <li><a href="mailto:kevin.skyulee@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
 
   <div class="container">
-      <nav id="navigation">
-        <div class="logo">Kevin Lee</div>
-        <ul class="navigation__items">
-          <li><a href="./uploads/Kevin_Lee_Resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="https://github.com/KLSeung" target="_blank">GitHub</a></li>
-          <li><a href="mailto:kevin.skyulee@gmail.com">Contact</a></li>
-        </ul>
-      </nav>
+
 
     <section class="row intro">
       <div class="intro_bg"></div>
@@ -123,12 +123,14 @@
       let prevScrollpos = window.pageYOffset;
       window.onscroll = function(){
         let currentScrollpos = window.pageYOffset;
-        // const navTop = document.getElementsByClassName("navigation").style.top
+        
         if(prevScrollpos > currentScrollpos){
           document.getElementById("navigation").style.top = "0";
+          document.getElementById("navigation").style.backgroundColor = "white";
         }
         else{
           document.getElementById("navigation").style.top = "-100px"; 
+          document.getElementById("navigation").style.backgroundColor = "#F5F5F5";
         }
         prevScrollpos = currentScrollpos;
       }
