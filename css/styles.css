@@ -15,28 +15,28 @@ body {
 }
 
 .row{
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 /* navigation styles tart here */
 
 .navigation {
   display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 20px 0px 0px 0px;
+  width: 100%;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 80px;
-  border-bottom: 1px solid black;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
 nav li {
   margin-left: 1em;
   margin-bottom: 1em;
+  display: inline-block
 }
 
 nav a {
@@ -47,31 +47,28 @@ nav a {
 
 nav a:hover {
   color: grey;
+  transition: 0.5s;
 }
 
 .logo {
   font-size: 30px;
   letter-spacing: 0.11em;
   text-transform: uppercase;
-}
-
-
-.navigation__items{
-  display: flex;
+  margin-right: auto;
 }
 
 
 nav li {
-  margin-left: 2em;
+  margin-left: 3em;
   margin-bottom: 0;
   font-size: 15px;
   font-style: normal;
   font-weight: normal;
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 750px) {
   .logo {
-    font-size: 17px;
+    display:none;
   }
 
   nav li {
@@ -82,23 +79,41 @@ nav li {
 
 /* intro styling starts here */
 
+.intro{
+  margin-bottom: 40px;
+  margin-top: 150px;
+}
 
 .profilePic {
-  border-radius: 50%;
-  width: 220px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  }
+     width: 240px;
+     height: 240px;
+  } 
 
+.intro_bg{
+  background-image: url(../img/SVG/Intro_bg.svg);
+  background-repeat: no-repeat;
+  position:absolute;
+  width:100%;
+  height:40%; 
+  left: 0;
+}
 
 .introText {
-  margin:auto;
+  margin-left: 65px;
+}
+
+@media only screen and (max-width: 700px) {
+  .introText{
+     margin-left: 0;
+  }
 }
 
 .introName {
   font-size: 36px;
   line-height: 49px;
   font-weight: bold;
-  padding-bottom: 10px;
+  margin-bottom: 30px;
+
 }
 
 .introDesc {
@@ -106,11 +121,73 @@ nav li {
   line-height: 35px;
 }
 
+.environment_bg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: auto;
+}
 /* projects styling starts here */
+
+.work_intro{
+  text-align: center;
+  padding: 6%;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.project{
+  margin-top: 20px;
+}
+
+.project_text{
+  margin: 10px 0px 0px 0px;
+  padding-left: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .project_text{
+     padding-left: 0;
+  }
+}
+
+.project_bg1{
+  background-image: url(../img/SVG/project_bg1.svg);
+  background-repeat: no-repeat;
+  position:absolute;
+  width:100%;
+  height: 50%; 
+  left: 0;
+}
+
+.project_bg2{
+  background-image: url(../img/SVG/project_bg2.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+}
+
+.project_bg3{
+  background-image: url(../img/SVG/project_bg3.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+}
 
 .project__container {
   position: relative;
   width: 100%;
+}
+
+.projectDesc{
+  text-align: left;
 }
 
 .project__name{
@@ -122,7 +199,7 @@ nav li {
   max-width: 100%;
   border-radius: 15px;
   border: 1px solid #A9A9A9;
-  margin-top: 30px;
+  margin: 30px 0px 10px 0px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -147,8 +224,13 @@ nav li {
   opacity: 1
 }
 
+.tagContainer{
+  display: flex;
+  justify-content: space-evenly;
+  text-align-last: center;
+}
+
 .projectsTag {
-  display: inline-block;
   font-size: 14px;
   font-weight: 700;
   border-radius: 20px;
@@ -184,4 +266,27 @@ nav li {
 .projectsTag-green {
   color: #fff;
   background-color: rgba(48, 200, 82, 0.69);
+}
+
+.demo_btn{
+  background: #2B3D51;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 10px 15px; 
+  margin: 15px 0 0 0;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.demo_btn:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

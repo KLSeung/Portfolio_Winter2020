@@ -18,28 +18,109 @@
 
   <body>
 
-  <div class="container">
+  <div></div>
 
+  <div class="container">
       <nav class="navigation">
-        <p class="logo">Kevin Lee</p>
+        <div class="logo">Kevin Lee</div>
         <ul class="navigation__items">
-          <li><a href="./uploads/Kevin_Lee_Resume.pdf">Resume</a></li>
-          <li><a href="https://github.com/KLSeung">GitHub</a></li>
+          <li><a href="./uploads/Kevin_Lee_Resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="https://github.com/KLSeung" target="_blank">GitHub</a></li>
           <li><a href="mailto:kevin.skyulee@gmail.com">Contact</a></li>
         </ul>
       </nav>
 
-    <section class="row">
+    <section class="row intro">
+      <div class="intro_bg"></div>
       <div class="col-md-3">
-        <img src="img/MyPic.jpg" class="profilePic" alt="Me">
+        <img src="img/SVG/MyPic.svg" class="profilePic img-responsive">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 introText">
         <h1 class="introName">Hi, I'm Kevin</h1>
         <p class="introDesc">A Front-End Developer with an Environmental Engineering and Electrical Engineering background.</p>
       </div>
+
+    </section>
+
+    <img src="img/SVG/environment.svg" class="environment_bg" alt="environment">
+    <div class="work_intro">Projects</div>
+
+    <section class="row project">
+      <div class="project_bg1"></div>
+      <div class="col-md-4">
+        <img src="img/Alarm_Clock.png" class="project__image" alt="Alarm Clock">
+        <div class="tagContainer">       
+           <div class="projectsTag projectsTag-pink">
+            HTML
+           </div>
+          <div class="projectsTag projectsTag-blue">
+           CSS
+          </div>
+         <div class="projectsTag projectsTag-purple">
+            JavaScript
+         </div>
+        </div>
+      </div>
+      <div class="col-md-6 project_text">
+        <h1 class="projectDesc">AlarmMe</h1>
+        <p class="projectDesc">An alarm application which allows users to view the time and set an alarm which plays a user selected audio file</p>
+        <a href="https://klseung.github.io/AlarmMe/" target="_blank" class="demo_btn">View Demo</a>
+      </div>
+      <div class="col-md-4"></div>
     </section>
 
     <section class="row">
+      <div class="project_bg2"></div>
+      <div class="col-md-4">
+        <img src="img/Robofriends.png" class="project__image" alt="Robofriends">
+        <div class="tagContainer">       
+           <div class="projectsTag projectsTag-pink">
+            HTML
+           </div>
+            <div class="projectsTag projectsTag-blue">
+            CSS
+            </div>
+          <div class="projectsTag projectsTag-purple">
+              JavaScript
+          </div>
+          <div class="projectsTag projectsTag-lightblue">
+            React
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 project_text">
+        <h1>Robofriends</h1>
+        <p> React Application containg different robot information stored in cards with a dynamic search function</p>
+        <a href="https://klseung.github.io/robofriends/" target="_blank" class="demo_btn">View Demo</a>
+      </div>
+      <div class="col-md-4"></div>
+    </section>
+
+    <section class="row">
+      <div class="project_bg3"></div>
+      <div class="col-md-4">
+        <img src="img/Rock_Paper_Scissor.png" class="project__image" alt="Rock Paper Scissors">
+        <div class="tagContainer">       
+           <div class="projectsTag projectsTag-pink">
+            HTML
+           </div>
+            <div class="projectsTag projectsTag-blue">
+            CSS
+            </div>
+          <div class="projectsTag projectsTag-purple">
+              JavaScript
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 project_text">
+        <h1>Rock Paper Scissors</h1>
+        <p> Simple Rock Paper Scissors game that the user can play against a CPU</p>
+        <a href="https://klseung.github.io/Rock-Paper-Scissor/" target="_blank" class="demo_btn">View Demo</a>
+      </div>
+      <div class="col-md-4"></div>
+    </section>
+
+    <!-- <section class="row">
       <div class="col-md-4">
         <div class="project">
           <a class="project__container" href="https://github.com/KLSeung/AlarmMe">
@@ -122,7 +203,7 @@
         <div class="col-md-4">
 
         </div>
-      </section>
+      </section> -->
 
 
   </body>
