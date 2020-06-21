@@ -18,15 +18,18 @@ body {
   margin-bottom: 100px;
 }
 
-/* navigation styles tart here */
+/* navigation styles start here */
 
-.navigation {
+
+#navigation {
   display: flex;
   justify-content: flex-end;
   margin: 0;
   padding: 20px 0px 0px 0px;
-  width: 100%;
-  align-items: center;
+  width: 80%;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
 }
 
 nav ul {

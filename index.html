@@ -21,7 +21,7 @@
   <div></div>
 
   <div class="container">
-      <nav class="navigation">
+      <nav id="navigation">
         <div class="logo">Kevin Lee</div>
         <ul class="navigation__items">
           <li><a href="./uploads/Kevin_Lee_Resume.pdf" target="_blank">Resume</a></li>
@@ -119,93 +119,20 @@
       </div>
       <div class="col-md-4"></div>
     </section>
-
-    <!-- <section class="row">
-      <div class="col-md-4">
-        <div class="project">
-          <a class="project__container" href="https://github.com/KLSeung/AlarmMe">
-            <img src="img/Alarm_Clock.png" class="project__image" alt="Alarm Clock">
-            <div class="project__github">
-              Source Code
-            </div>
-          </a>
-          <p class="project__name">AlarmMe</p>
-          <div class="projectsTag projectsTag-pink">
-            HTML
-          </div>
-          <div class="projectsTag projectsTag-blue">
-            CSS
-          </div>
-          <div class="projectsTag projectsTag-purple">
-            JavaScript
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <a class="project__container" href="https://github.com/KLSeung/Rock_Paper_Scissor">
-          <img src="img/Rock_Paper_Scissor.png" class="project__image" alt="Rock Paper Scissor">
-          <div class="project__github">
-            Source Code
-          </div>
-        </a>
-        <p class="project__name">Rock Paper Scissor</p>
-        <div class="projectsTag projectsTag-pink">
-            HTML
-        </div>
-        <div class="projectsTag projectsTag-blue">
-            CSS
-        </div>
-        <div class="projectsTag projectsTag-purple">
-            JavaScript
-        </div>
-      </div>
-      <div class="col-md-4">
-        <a class="project__container" href="https://github.com/KLSeung/robofriends">
-          <img src="img/Robofriends.png" class="project__image" alt="Robofriends">
-          <div class="project__github">
-            Source Code
-          </div>
-        </a>
-          <p class="project__name">Robofriends</p>
-          <div class="projectsTag projectsTag-pink">
-            HTML
-          </div>
-          <div class="projectsTag projectsTag-blue">
-            CSS
-          </div>
-          <div class="projectsTag projectsTag-purple">
-            JavaScript
-          </div>
-          <div class="projectsTag projectsTag-lightblue">
-            React
-          </div>
-      </div>
-
-      <section class="row">
-        <div class="col-md-4">
-          <a class="project__container" href="https://github.com/KLSeung/MyWeatherApp">
-            <img src="img/MyWeatherApp.jpg" class="project__image" alt="My Weather Application">
-            <div class="project__github">
-              Source Code
-            </div>
-          </a>
-            <p class="project__name">MyWeatherApp</p>
-            <div class="projectsTag projectsTag-red">
-              Java
-            </div>
-            <div class="projectsTag projectsTag-green">
-              AndroidStudio
-            </div>
-        </div>
-        <div class="col-md-4">
-
-        </div>
-        <div class="col-md-4">
-
-        </div>
-      </section> -->
-
-
+    <script type="text/javascript">
+      let prevScrollpos = window.pageYOffset;
+      window.onscroll = function(){
+        let currentScrollpos = window.pageYOffset;
+        // const navTop = document.getElementsByClassName("navigation").style.top
+        if(prevScrollpos > currentScrollpos){
+          document.getElementById("navigation").style.top = "0";
+        }
+        else{
+          document.getElementById("navigation").style.top = "-100px"; 
+        }
+        prevScrollpos = currentScrollpos;
+      }
+    </script>
   </body>
 
 </html>
