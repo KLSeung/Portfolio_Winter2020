@@ -20,12 +20,11 @@ body {
 
 /* navigation styles start here */
 
-
 #navigation {
   display: flex;
   justify-content: flex-end;
   margin: 0;
-  padding: 40px 180px 0px 180px;
+  padding: 40px 170px 0px 170px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -83,17 +82,19 @@ nav a:hover {
   }
 }
 
-@media screen and (max-width: 1000px){
-  .introText{
-    padding-left: 50px;
+
+@media screen and (max-width: 1180px) {
+  #navigation{
+    padding-left: 100px;
   }
 }
 
-@media screen and (max-width: 765px){
-  .introText{
+@media screen and (max-width: 425px) {
+  #navigation{
     padding-left: 0px;
   }
 }
+
 
 /* intro styling starts here */
 
@@ -129,6 +130,19 @@ nav a:hover {
   }
 }
 
+
+@media screen and (max-width: 1000px){
+  .introText{
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 765px){
+  .introText{
+    padding-left: 0px;
+  }
+}
+
 .introName {
   font-size: 36px;
   line-height: 49px;
@@ -149,6 +163,13 @@ nav a:hover {
   width: 40%;
   height: auto;
 }
+
+@media screen and (max-width: 425px){
+  .environment_bg{
+    width: 100%;
+  }
+}
+
 /* projects styling starts here */
 
 .work_intro{

@@ -17,19 +17,15 @@
   </head>
 
   <body>
-
-    <nav id="navigation">
-      <div class="logo">Kevin Lee</div>
-      <ul class="navigation__items">
-        <li><a href="./uploads/Kevin_Lee_Resume.pdf" target="_blank">Resume</a></li>
-        <li><a href="https://github.com/KLSeung" target="_blank">GitHub</a></li>
-        <li><a href="mailto:kevin.skyulee@gmail.com">Contact</a></li>
-      </ul>
-    </nav>
-
+  <nav id="navigation">
+    <div class="logo">Kevin Lee</div>
+    <ul class="navigation__items">
+      <li><a href="./uploads/Kevin_Lee_Resume.pdf" target="_blank">Resume</a></li>
+      <li><a href="https://github.com/KLSeung" target="_blank">GitHub</a></li>
+      <li><a href="mailto:kevin.skyulee@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
   <div class="container">
- 
-
     <section class="row intro">
       <div class="intro_bg"></div>
       <div class="col-md-3">
@@ -39,7 +35,6 @@
         <h1 class="introName">Hi, I'm Kevin</h1>
         <p class="introDesc">A Front-End Developer with an Environmental Engineering and Electrical Engineering background.</p>
       </div>
-
     </section>
 
     <img src="img/SVG/environment.svg" class="environment_bg" alt="environment">
@@ -50,15 +45,15 @@
       <div class="col-md-4">
         <img src="img/Alarm_Clock.png" class="project__image" alt="Alarm Clock">
         <div class="tagContainer">       
-           <div class="projectsTag projectsTag-pink">
+          <div class="projectsTag projectsTag-pink">
             HTML
-           </div>
-          <div class="projectsTag projectsTag-blue">
-           CSS
           </div>
-         <div class="projectsTag projectsTag-purple">
+          <div class="projectsTag projectsTag-blue">
+          CSS
+          </div>
+        <div class="projectsTag projectsTag-purple">
             JavaScript
-         </div>
+        </div>
         </div>
       </div>
       <div class="col-md-6 project_text">
@@ -74,9 +69,9 @@
       <div class="col-md-4">
         <img src="img/Robofriends.png" class="project__image" alt="Robofriends">
         <div class="tagContainer">       
-           <div class="projectsTag projectsTag-pink">
+          <div class="projectsTag projectsTag-pink">
             HTML
-           </div>
+          </div>
             <div class="projectsTag projectsTag-blue">
             CSS
             </div>
@@ -101,9 +96,9 @@
       <div class="col-md-4">
         <img src="img/Rock_Paper_Scissor.png" class="project__image" alt="Rock Paper Scissors">
         <div class="tagContainer">       
-           <div class="projectsTag projectsTag-pink">
+          <div class="projectsTag projectsTag-pink">
             HTML
-           </div>
+          </div>
             <div class="projectsTag projectsTag-blue">
             CSS
             </div>
@@ -119,22 +114,23 @@
       </div>
       <div class="col-md-4"></div>
     </section>
-    <script type="text/javascript">
-      let prevScrollpos = window.pageYOffset;
-      window.onscroll = function(){
-        let currentScrollpos = window.pageYOffset;
-        
-        if(prevScrollpos > currentScrollpos){
-          document.getElementById("navigation").style.top = "0";
-          document.getElementById("navigation").style.backgroundColor = "white";
-        }
-        else{
-          document.getElementById("navigation").style.top = "-100px"; 
-          document.getElementById("navigation").style.backgroundColor = "#F5F5F5";
-        }
-        prevScrollpos = currentScrollpos;
+  </div>
+  <script type="text/javascript">
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function(){
+      let currentScrollpos = window.pageYOffset;
+      
+      if(prevScrollpos > currentScrollpos){
+        document.getElementById("navigation").style.top = "0";
+        document.getElementById("navigation").style.backgroundColor = "white";
       }
-    </script>
+      else{
+        document.getElementById("navigation").style.top = "-100px"; 
+        document.getElementById("navigation").style.backgroundColor = "#F5F5F5";
+      }
+      prevScrollpos = currentScrollpos;
+    }
+  </script>
   </body>
 
 </html>
